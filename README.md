@@ -1,7 +1,7 @@
-# 📜 AntiRafleBot – README
+# 📜 ARB – README
 
 ## 📌 Présentation du projet
-AntiRafleBot est un outil automatisé qui aide à signaler et enregistrer les interventions policières (rafles) en temps réel.  
+ARB est un outil automatisé qui aide à signaler et enregistrer les interventions policières (rafles) en temps réel.  
 Il utilise des données préformatées (JSON) pour conserver les informations sur chaque événement : localisation, type d’intervention, agents présents, temps d’attente, etc.  
 Le but est de **collecter, analyser et éventuellement alerter des réseaux de soutien**.
 
@@ -10,7 +10,7 @@ Le but est de **collecter, analyser et éventuellement alerter des réseaux de s
 ## 🗂 Structure du projet
 
 Voici les fichiers principaux :
-- **`AntiRafleBot.py`**  
+- **`ARB.py`**  
   Le programme principal qui lit les données et les traite.  
   C’est ici que s’effectuent la lecture des fichiers JSON, l’analyse des informations, et éventuellement leur affichage ou traitement.
   
