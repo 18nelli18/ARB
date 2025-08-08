@@ -15,8 +15,8 @@ Voici les fichiers principaux :
   C’est ici que s’effectuent la lecture des fichiers JSON, l’analyse des informations, et éventuellement leur affichage ou traitement.
   
 - **`report.json`**  
-  Exemple de fichier de données.  
-  Contient les informations d’une intervention (date, lieu, type, nombre d’agents, issue, etc.) au format JSON.
+  Fichier de save des signalement
+  À utiliser par la suite pour envoyer les signalements
 
 ---
 
@@ -88,8 +88,4 @@ Pas besoin de connaissances techniques poussées, mais il faut installer les out
        - Le nombre d’agents
        - L’heure
    - Objectif : prévenir rapidement un groupe de soutien.
-
-2. **Interface graphique simple** pour visualiser les rapports.
-3. **Envoi automatique des rapports** vers un serveur central ou une base de données.
-4. **Ajout de géolocalisation sur carte** (via Google Maps ou OpenStreetMap).
-5. **Mode temps réel** pour enregistrer les événements au fur et à mesure.
+2. **Ajout de géolocalisation sur carte** (via Google Maps (api payante mais fonctionne très bien) ou OpenStreetMap).
