@@ -88,6 +88,7 @@ Pas besoin de connaissances techniques poussées, mais il faut installer les out
        - Le nombre d’agents
        - L’heure
    - Objectif : prévenir rapidement un groupe de soutien.
-   - Version en plusieurs langues + version audio  
+   - Version en plusieurs langues + version audio
+   - Regarder pour la meilleure méthode diffusion sur whatsapp (chaine / canaux etc)
 2. **Ajout de géolocalisation sur carte** (via Google Maps (api payante mais fonctionne très bien) ou OpenStreetMap).
 3. **Hebergement définitif sur un serveur stable safe (jusque là les test du bot était réalisés en l'hébergent en local)**
