@@ -1,4 +1,5 @@
 import json
+import os
 from datetime import datetime
 from telegram import Update, ReplyKeyboardMarkup, InputMediaPhoto
 from telegram.ext import (
@@ -406,7 +407,10 @@ async def cancel(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
 
 
 def main():
-    app = ApplicationBuilder().token("7919182636:AAFypul5FikMfYydDr0MXD2OHLgemaPNWPE").build()
+    token = os.getenv("TELEGRAM_BOT_TOKEN")
+    if not token:
+        raise RuntimeError("Erreur : TELEGRAM_BOT_TOKEN n'est pas défini dans les variables d'environnement.")
+    app = ApplicationBuilder().token(token).build()
     conv = ConversationHandler(
         entry_points=[CommandHandler('start', start), MessageHandler(filters.Regex(r'Start'), handle_start)],
         states={
